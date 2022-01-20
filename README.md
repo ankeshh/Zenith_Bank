@@ -1,6 +1,6 @@
 # :dollar: E-Banking using Three-Factor Authentication (3FA)
 
-Name: Zenith Bank
+Name: Zenith Bank <br/>
 Developers: Ankesh Singh (@ankeshh), Nevin Troy (@NevinTroy)
 
 ***
