@@ -30,26 +30,26 @@ const port= process.env.PORT || 3000;
 const saltRounds=Math.floor(Math.random()*10);
 
 // // Ankesh's database
-const db=knex({
-    client:'pg',
-    connection:{
-        host:'127.0.0.1',
-        user:'ankesh',
-        password:'imageaiproject',
-        database:'ebank'
-    }
-});
-
-// Nevin's database
 // const db=knex({
 //     client:'pg',
 //     connection:{
 //         host:'127.0.0.1',
-//         user:'postgres',
-//         password:'troy',
+//         user:'ankesh',
+//         password:'imageaiproject',
 //         database:'ebank'
 //     }
 // });
+
+// Nevin's database
+const db=knex({
+    client:'pg',
+    connection:{
+        host:'127.0.0.1',
+        user:'postgres',
+        password:'troy',
+        database:'ebank'
+    }
+});
 const transporter = nodemailer.createTransport({
     service:"Gmail",
     auth:{

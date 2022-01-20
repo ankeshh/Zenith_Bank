@@ -73,6 +73,7 @@ export const OptionText = styled.select`
     width: 92%;
     border-radius: 5px;
     background-color: white;
+    padding:8px 8px;
 `;
 
 export const OptionInput = styled.option`
