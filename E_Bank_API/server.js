@@ -35,7 +35,7 @@ const db=knex({
         host:'127.0.0.1',
         user:'YOUR_USERNAME',
         password:'YOUR_PASSWORD',
-        database:'YOUR_DB'
+        database:'YOUR_DATABASE_NAME'
     }
 });
 const transporter = nodemailer.createTransport({
