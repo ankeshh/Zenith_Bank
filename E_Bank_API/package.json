@@ -1,6 +1,6 @@
 {
   "name": "e_bank_api",
-  "author": "Nevin and Ankesh",
+  "authors": "Nevin and Ankesh",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
