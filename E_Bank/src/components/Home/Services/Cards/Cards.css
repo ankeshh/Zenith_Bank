@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.font-normal {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.font-number {
+  font-family: "Orbitron", sans-serif;
+}
+.card {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+  perspective: 1000px;
+}
+.card__container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  height: 240px;
+}
+
+.card__front {
+  width: 370px;
+  height: 240px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 38px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 22;
+  animation-name: cardFront;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+.card__back {
+  width: 370px;
+  height: 240px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 38px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  z-index: 11;
+  animation-name: cardBack;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.card__back--bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 7px;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  font-size: 10px;
+}
+.company-dec{
+  margin-left: 30px;
+}
+
+.card__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__contact--txt {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 7px 20px;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.card__strip {
+  width: 100%;
+  height: 45px;
+  background: #131313;
+  margin: 4px 0;
+}
+.card__company{
+  width: 90%;
+}
+.card__company--address {
+  font-size: 8px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.card__company--msg {
+  font-size: 8px;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.card__cvc {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.card__cvc--strip {
+  width: 200px;
+  background-color: wheat;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card__cvc--txt {
+  background: wheat;
+  margin-left: 6px;
+  padding: 2px 6px;
+  font-style: italic;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+}
+.card__cvc--num {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.card__cvc--warning {
+  font-size: 5.5px;
+  margin-left: -150px;
+  margin-top: 4px;
+}
+.card__brand {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 19px;
+  position: absolute;
+  transform: translate(-50%);
+}
+.card__brand--name {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  color: wheat;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.card__brand--logo {
+  font-size: 21px;
+  color: wheat;
+  font-weight: 900;
+}
+.card__number {
+  position: relative;
+  top: 62%;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffc500;
+  text-shadow: 0px 0px 2px #4a2d00;
+  letter-spacing: 1px;
+}
+.card__user {
+  position: relative;
+  top: 70%;
+  display: flex;
+  left: 30px;
+  color: #ffffff;
+}
+.card__user--name {
+  text-transform: uppercase;
+  width: 50%;
+  font-size: 15px;
+  letter-spacing: 1.4px;
+  font-weight: 600;
+}
+.card__user--valid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.card__user--valid-txt {
+  display: inline-flex;
+  font-size: 10px;
+  margin-bottom: 5px;
+  text-shadow: 0 0 3px #060606;
+}
+.card__user--valid-date {
+  font-size: 13px;
+  font-weight: 700;
+  text-shadow: 0 0 3px #060606;
+}
+.card__payment {
+  position: absolute;
+  color: #ffc500;
+  bottom: 20px;
+  right: 27px;
+  font-size: 2.5em;
+}
+.card__front--bg {
+  position: absolute;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.card__chip {
+  position: absolute;
+  top: 86px;
+  left: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #101010
+}
+.card__chip--shape {
+  width: 43px;
+  height: 9px;
+  background: #EFB35B;
+  border-radius: 1px;
+  margin-bottom: 1px;
+}
+.card__chip--shape:last-child {
+  margin-bottom: 0;
+  border-radius: 1px 1px 3px 3px;
+}
+.card__chip--shape:first-child {
+  border-radius: 3px 3px 1px 1px;
+}
+.card__chip--shape:first-child:after {
+  content: "";
+  position: absolute;
+  background: #EFB35B;
+  border: 1px solid #101010;
+  width: 12px;
+  height: 23px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.card__chip:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 12px solid #fab25e40;
+  border-bottom: 8px solid transparent;
+  left: -20px;
+  top: 7px;
+}
+
+.card__plast {
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 100%;
+}
+
+.card .logo {
+  display: flex;
+  position: relative;
+  bottom: 2px;
+}
+.card .logo--shape {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+.card .logo-red {
+  background: #ff0000;
+  left: 5px;
+}
+.card .logo-yellow {
+  background: #ffff00;
+  right: 5px;
+}
+.card .logo-name {
+  position: relative;
+  left: 0;
+  top: -3px;
+  font-size: 12px;
+  color: white;
+  opacity: 0.2;
+}
+
+.card .logo-letter {
+  position: relative;
+  text-shadow: 0
+}
+
+@keyframes cardFront {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: -52%;
+    top: -12%;
+  }
+}
+@keyframes cardBack {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: 52%;
+    top: 12%;
+  }
+}
+@media all and (max-width: 768px) {
+  @keyframes cardFront {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: 0%;
+      top: -54%;
+    }
+  }
+  @keyframes cardBack {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: 0%;
+      top: 54%;
+    }
+  }
+}
+@media all and (max-width: 420px) {
+  .card__container {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+} 

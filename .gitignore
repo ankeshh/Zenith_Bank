@@ -1,0 +1,21 @@
+/E_Bank/node_modules
+/E_Bank_API/node_modules
+/E_Bank/.pnp
+/E_Bank/.pnp.js
+
+# testing
+/E_Bank/coverage
+
+# production
+/E_Bank/build
+
+# misc
+/E_Bank/.DS_Store
+/E_Bank/.env.local
+/E_Bank/.env.development.local
+/E_Bank/.env.test.local
+/E_Bank/.env.production.local
+
+/E_Bank/npm-debug.log*
+/E_Bank/yarn-debug.log*
+/E_Bank/yarn-error.log*
