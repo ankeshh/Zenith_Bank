@@ -33,16 +33,16 @@ const db=knex({
     client:'pg',
     connection:{
         host:'127.0.0.1',
-        user:'postgres',
-        password:'troy',
-        database:'ebank'
+        user:'YOUR_USERNAME',
+        password:'YOUR_PASSWORD',
+        database:'YOUR_DATABASE_NAME'
     }
 });
 const transporter = nodemailer.createTransport({
     service:"Gmail",
     auth:{
-        user: 'zenithbankofficial12@gmail.com',
-        pass: 'KetTroy12#'
+        user: 'YOUR_GMAIL_USERNAME',
+        pass: 'YOUR_PASSWORD'
     },
     tls:{
         rejectUnauthorized:false
