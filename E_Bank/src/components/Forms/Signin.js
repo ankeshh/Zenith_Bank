@@ -57,7 +57,7 @@ class Signin extends React.Component {
                         <input type="text" id="usr_name" required onChange={this.onUsernameChange}/> <br/>
                         <label>Password</label> 
                         <input type="password" id="usr_password" required onChange={this.onPasswordChange}/> <br/>
-                        <a className='buttons' type="submit" value="Signin" onClick={this.onSubmitSignin} href="#0">Verify</a>
+                        <a className='buttons' type="submit" value="Signin" onClick={this.onSubmitSignin} >Verify</a>
                         <label>New User? Create a new account</label>
                         <Link to="/register" className='buttons' type="submit" value="Register">Register</Link>
                     </form>

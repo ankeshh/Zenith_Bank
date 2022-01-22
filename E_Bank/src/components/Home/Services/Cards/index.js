@@ -3,7 +3,7 @@ import SideMenu from '../../modules/SideMenu';
 import {ComponentWrapper} from '../../HomeElements';
 import CardDesign from './CardDesign';
 import Carousel from './Carousel';
-import { IndexContainer, IndexWrap, AddIcon, AddCard, Headline, Headline1 } from './CardElements';
+import { IndexContainer, IndexWrap, AddIcon, AddCard, Headline, Headline1} from './CardElements';
 
 class index  extends React.Component {
     constructor(props){
@@ -43,7 +43,7 @@ class index  extends React.Component {
                         <IndexWrap>
                             {
                                 this.state.ready ? <Carousel CardArray={CardArray} />
-                                : console.log('wait') 
+                                : console.log('wait')
                             }
                         </IndexWrap>
                         <Headline1>Add a new Card</Headline1>

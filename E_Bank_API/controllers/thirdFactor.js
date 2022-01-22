@@ -46,7 +46,7 @@ const thirdFactorRegistration=(req,res,db,bcrypt,saltRounds,transporter)=>{
                     }
                     transporter.sendMail(options,(err,info)=>{
                         if(err){
-                            res.json(err)
+                            res.status(400).json(err);
                         }
                         else{
                             res.json(info.response);

@@ -20,6 +20,7 @@ const Card=(props)=>{
     const {name,id,maxRobots,phno}=props;
     return(
         <RobotCard>
+            {console.log(id*phno)}
             <RobotImage  src={`https://robohash.org/${id*phno}?200x200`} alt="image" ></RobotImage>
             <RobotName>{name}</RobotName>
             <RobotSelect onClick={()=>robotSelect(id,name,maxRobots,count)} >Select</RobotSelect>

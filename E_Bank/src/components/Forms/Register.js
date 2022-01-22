@@ -86,7 +86,7 @@ class Register extends React.Component{
                                 <option value="M">Male</option>    
                                 <option value="F">Female</option>
                             </select> 
-                            <a className='buttons' type="submit" value="Register" onClick={this.onRegister} href='#0'>Register</a>
+                            <a className='buttons' type="submit" value="Register" onClick={this.onRegister} >Register</a>
                         </form>
                     </div>
                 </div>

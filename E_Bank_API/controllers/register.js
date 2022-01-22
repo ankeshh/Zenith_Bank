@@ -29,9 +29,10 @@ const handleRegister=(req,res,db,bcrypt,saltRounds)=>{
                 acc_type: 'Spending',
                 acc_label:  'Default account',
                 acc_limit: 50
-            }).then(res.json(users[0]));
+            })
+            .then(res.json(users[0]));
         })
-        .catch(err=>res.json(err.message));
+        .catch(err=>res.status(400).json(err.message));
 }
 
 
