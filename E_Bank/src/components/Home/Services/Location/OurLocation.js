@@ -30,5 +30,5 @@ class OurLocation extends React.Component {
   }
    
   export default GoogleApiWrapper({
-    apiKey: ("AIzaSyC-9NvPpKKP7xPQZ57XpALl76KsJ12qMCQ")
+    apiKey: ("YOUR_API_KEY")
   })(OurLocation)
